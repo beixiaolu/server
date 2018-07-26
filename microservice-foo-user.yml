@@ -1,0 +1,19 @@
+eureka:
+  client:
+    health-check:
+      enabled: true
+    service-url:
+      defaultZone: http://user:123456@localhost:8084/eureka/
+  instance:
+    filter-only-up-instances: true
+    prefer-ip-address: true
+    metadata-map:
+    #自定义的元数据
+     # qqq: www
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+  java:
+    source: @java.version@
+    target: @java.version@
