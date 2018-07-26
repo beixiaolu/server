@@ -4,10 +4,6 @@ eureka:
       enabled: true
     service-url:
       defaultZone: http://user:123456@localhost:8761/eureka/
-  instance:
-    filter-only-up-instances: true
-    prefer-ip-address: true
-    metadata-map:
 spring:
   application:
     name: user-service
