@@ -1,4 +1,5 @@
 spring:
+  profiles: peer1
   application:
     name: eureka-server
 eureka:
