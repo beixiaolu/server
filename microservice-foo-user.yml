@@ -7,10 +7,8 @@ eureka:
   instance:
     filter-only-up-instances: true
     prefer-ip-address: true
-info:
-  app:
-    name: @project.artifactId@
-    encoding: @project.build.sourceEncoding@
-  java:
-    source: @java.version@
-    target: @java.version@
+    metadata-map:
+spring:
+  application:
+    name: user-service
+
