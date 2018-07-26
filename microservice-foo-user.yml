@@ -7,9 +7,6 @@ eureka:
   instance:
     filter-only-up-instances: true
     prefer-ip-address: true
-    metadata-map:
-    #自定义的元数据
-     # qqq: www
 info:
   app:
     name: @project.artifactId@
