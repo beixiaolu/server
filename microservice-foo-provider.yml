@@ -1,8 +1,8 @@
 spring:
   application:
-    name: user-service
+    name: provider-service
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/liu
+    url: jdbc:mysql://127.0.0.1:3306/liu?useSSL=false
     username: root
     password: lgx11111
     driver-class-name: com.mysql.jdbc.Driver
@@ -15,13 +15,3 @@ eureka:
   instance:
     filter-only-up-instances: true
     prefer-ip-address: true
-    metadata-map:
-    #自定义的元数据
-     # qqq: www
-info:
-  app:
-    name: @project.artifactId@
-    encoding: @project.build.sourceEncoding@
-  java:
-    source: @java.version@
-    target: @java.version@
