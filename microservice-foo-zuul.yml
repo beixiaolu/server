@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    service-url:
+     defaultZone: http://user:123456@localhost:8084/eureka
+management:
+  security:
+    enabled: false
+zuul:
+  routes:
+    user-service: /user/**
+  ignored-services:
+  #service1
