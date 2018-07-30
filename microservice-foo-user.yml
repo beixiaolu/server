@@ -1,10 +1,8 @@
-eureka:
-  client:
-    health-check:
-      enabled: true
-    service-url:
-      defaultZone: http://user:123456@localhost:8761/eureka/
 spring:
   application:
     name: user-service
+eureka:
+  client:
+    service-url:
+     defaultZone: http://user:123456@localhost:8761/eureka/
 

@@ -1,1 +1,14 @@
-profile=test-1.0
+spring:
+  application:
+    name: dashboard
+eureka:
+  client:
+    health-check:
+      enabled: true
+    service-url:
+      defaultZone: http://user:123456@localhost:8761/eureka/
+    filter-only-up-instances: false
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@s
