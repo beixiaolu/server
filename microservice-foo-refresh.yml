@@ -1,0 +1,15 @@
+server:
+  port: 8097
+spring:
+  application:
+    name: config-client-refresh
+management:
+  security:
+    enabled: false
+eureka:
+  client:
+    health-check:
+      enabled: true
+    service-url:
+      defaultZone: http://user:123456@localhost:8761/eureka/
+profile: 4444444
