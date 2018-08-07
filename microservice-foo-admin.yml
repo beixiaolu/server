@@ -1,9 +1,4 @@
 spring:
   application:
     name: admin-server
-security:
-  basic:
-    enabled: true
-  user:
-    name: user
-    password: 123456
+    
